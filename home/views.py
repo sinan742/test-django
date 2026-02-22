@@ -21,5 +21,6 @@ def add_employee(request):
         
     return render(request, 'sample.html', {'form': form})
 
+from django.http import HttpResponse
 def sample(request):
-    return render(request)
+    return HttpResponse('helo')
