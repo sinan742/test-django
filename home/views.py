@@ -23,4 +23,4 @@ def add_employee(request):
 
 from django.http import HttpResponse
 def sample(request):
-    return HttpResponse('helo')
+    return HttpResponse('heloo world')
