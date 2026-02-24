@@ -12,12 +12,12 @@ from .form import EmployeeForm
 
 def add_employee(request):
     if request.method == "POST":
-        form = EmployeeForm(request.POST) # Get the typed data
+        form = EmployeeForm(request.POST) 
         if form.is_valid():
-            form.save() # THIS TRIGGER THE SIGNAL!
+            form.save() 
             return redirect('emplist')
     else:
-        form = EmployeeForm() # Show empty form
+        form = EmployeeForm() 
         
     return render(request, 'sample.html', {'form': form})
 
